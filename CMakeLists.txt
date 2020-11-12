@@ -3,4 +3,4 @@ project(CS411_DP)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(CS411_DP main.cpp build_test2.cpp build.hpp build.cpp)
+add_executable(CS411_DP build_test2.cpp build.hpp build.cpp)
