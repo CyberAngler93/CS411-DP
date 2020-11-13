@@ -39,7 +39,7 @@ build_test2.cpp is supplied as a testing program and was used to create my soult
 
 ## Method
 
-My approach to this problem was to use buttom up dynamic programing and utilize a memoization table ``bridge_memo_table`` in the form of a 2d vector of ints all which are initilizaed to ``-1``. 
+My approach to this problem was to use top down dynamic programing and utilize a memoization table ``bridge_memo_table`` in the form of a 2d vector of ints all which are initilizaed to ``-1``. 
 The main worker fuction is ``recurse_bridge()`` which takes 4 arugments which includes the bridges, number of west cities, number of east cities, and 2d vector of ints for memoization table. 
 There is one basecase which checks if the current memozation table value has been intilized to a value besides the starting value of ``-1`` if so then the we have the value already for this position in the table. 
 

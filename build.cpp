@@ -12,7 +12,7 @@ int build(int west, int east, const std::vector<Bridge> & bridges){
     auto bridge_memo_table = std::vector<std::vector<int>>(west + 1, std::vector<int>(east + 1, -1));
     return recurse_bridge(bridges, west, east, bridge_memo_table);
 }
-// Recursive work function for dynamic programing bottom up approach utilizing memoization table.
+// Recursive work function for dynamic programing top down approach utilizing memoization table.
 int recurse_bridge(const std::vector<Bridge> & bridges, int west, int east, std::vector<std::vector<int>> & bridge_memo_table){
     auto toll = 0;
     //Base Case already found this value!
