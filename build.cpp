@@ -21,7 +21,7 @@ int recurse_bridge(const std::vector<Bridge> & bridges, int west, int east, std:
     }
     for (auto const & bridge:bridges) {
         // Check if the the bridge is legal by checking current bridge vs the previous west, east bridge.
-        // std::max to take the best of the new legal bridges.
+        // std::max to take the best of the new legal bridges the next bridge must be strictly smaller than the previous east and west.
         if(bridge[0] < west && bridge[1] < east){
             toll = std::max(recurse_bridge(bridges, bridge[0], bridge[1], bridge_memo_table) + bridge[2], toll);
         }
