@@ -29,4 +29,3 @@ int recurse_bridge(const std::vector<Bridge> & bridges, int west, int east, std:
     bridge_memo_table[west][east] = toll;
     return toll;
 }
-
